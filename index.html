@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bundle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div id="flex-wrapper">
+      <div class="flex-item">
+        <div class="consent-text">
+          <h1>Consent Form</h1>
+
+          <h2>Thank you for your interest in our study</h2>
+
+          <p>
+            <strong>Study details:</strong> You are invited to participate in
+            our study on the processing of social information. This is a
+            research project conducted by psychologists in the Department of
+            Comparative Cultural Psychology, Max Planck Institute for
+            Evolutionary Anthropology (MPI-EVA), Leipzig, Germany. It should
+            take approximately 5 minutes to complete. If you have any questions
+            about this research, please contact Julia Prein at
+            <a
+              href="#"
+              class="cryptedmail"
+              data-name="julia_prein"
+              data-domain="eva.mpg"
+              data-tld="de"
+              onclick="window.location.href =
+              `mailto: ${this.dataset.name}@${this.dataset.domain}.${this.dataset.tld}`; return false;"
+            ></a>
+            .
+          </p>
+          <strong>Risks of participation:</strong> There are no foreseeable
+          risks involved in participating in this study other than those
+          encountered in day-to-day life.
+
+          <p>
+            <strong>Data recipient:</strong> The data recipient is the MPI-EVA.
+            The data will be sent to a server hosted by the Max Planck Institute
+            for Evolutionary Anthropology, Leipzig, Germany.
+          </p>
+
+          <p>
+            <strong>Contact details of the data protection officer:</strong>
+            Heidi Schuster, Data Protection Officer of the Max Planck Society.
+            If you have any questions, please do not hesitate to contact:
+            Katharina Haberl, MPI-EVA, Deutscher Platz 6, D-04103 Leipzig, Tel.:
+            0341-3550/157; e-mail:
+            <a
+              href="#"
+              class="cryptedmail"
+              data-name="forschungsreise"
+              data-domain="eva.mpg"
+              data-tld="de"
+              onclick="window.location.href =
+            `mailto: ${this.dataset.name}@${this.dataset.domain}.${this.dataset.tld}`; return false;"
+            ></a>
+          </p>
+
+          <p>
+            <strong>Processing purposes and legal basis:</strong> Basic research
+            such as that conducted by the MPI-EVA expands the (cultural)
+            knowledge of our society. This means the research projects of the
+            institute are activities in the public interest and meet the
+            criteria laid down in Article 6 and 9 EU GDPR (in particular Article
+            6 Para. 1 Letter e EU GDPR).
+          </p>
+
+          <p>
+            <strong>Data archive:</strong> Data will be stored in a password
+            protected electronic format for at least ten years (required by law,
+            GDPR compliant).
+          </p>
+
+          <p>
+            <strong>Data protection:</strong> We do not collect identifying
+            information such as your name, email address, or IP address. Your
+            anonymity is assured; the researchers who have requested your
+            participation will not receive any personal information about you.
+            Anonymized data can be used as part of scientific contributions at
+            research, teaching or information events and can be made available
+            to other researchers online.
+          </p>
+
+          <p>
+            <strong>Right to complain to the supervisory authority:</strong> If
+            you are of the opinion that the processing of your personal data is
+            unlawful, you have the right to complain to a supervisory authority
+            (Art. 77 GDPR).
+          </p>
+
+          <p>
+            <strong>Provision of the data:</strong> Your participation and your
+            answers to the tasks in this study are completely voluntary. You can
+            withdraw at any time by closing the browser window or tab. You will
+            not be disadvantaged in any way if you choose to not participate.You
+            may print a copy of this consent form for your records. Clicking on
+            the “Agree” label indicates that:
+          </p>
+
+          <ul>
+            <li>You have read and understood the above information</li>
+            <li>You voluntarily agree to participate</li>
+            <li>You are 18 years of age or older</li>
+          </ul>
+        </div>
+
+        <div class="mdc-form-field">
+          <div class="mdc-checkbox">
+            <input
+              type="checkbox"
+              class="mdc-checkbox__native-control"
+              id="checkbox-1"
+            />
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                <path
+                  class="mdc-checkbox__checkmark-path"
+                  fill="none"
+                  d="M1.73,12.91 8.1,19.28 22.79,4.59"
+                />
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+            <div class="mdc-checkbox__ripple"></div>
+          </div>
+          <label for="checkbox-1">Agree</label>
+        </div>
+
+        <br />
+        <button
+          type="button"
+          disabled
+          class="foo-button mdc-button mdc-button--raised"
+          id="start-btn"
+        >
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label"
+            ><strong>Start Experiment</strong></span
+          >
+        </button>
+      </div>
+    </div>
+
+    <script src="bundle.js" async></script>
+  </body>
+</html>
