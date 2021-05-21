@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bundle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="app.webmanifest" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div id="flex-wrapper">
+      <div class="flex-item">
+        <div class="webcam-text">
+          <h1>Webcam Preview</h1>
+
+          <p>
+            For recording your child’s answers, we need to videotape you and
+            your child using your webcam. The recorded video will also be stored
+            on a secure server at the Max Planck Institute in Leipzig, Germany,
+            and will not be shared with third parties.
+          </p>
+          <p>
+            The web browser <em>Safari</em> causes a few problems. If possible,
+            just open the page in another browser (for example: Chrome, Firefox,
+            Edge, etc.). If not, you can still participate in the study, but
+            your videos will not be saved. You will then receive an error
+            message at the end of the study, which you can simply ignore.
+          </p>
+          <p>
+            When you click on the "Webcam Preview" button, you will be asked if
+            you want to allow our website to use your webcam. Please agree to
+            this. Then a window will open where you can see the image that your
+            webcam is recording. Please position yourself and your child so that
+            you can both be seen clearly. When everyone is ready, close the
+            window (just click next to it) and then click "Next".
+          </p>
+        </div>
+
+        <div class="mdc-form-field">
+          <div class="mdc-checkbox">
+            <input
+              type="checkbox"
+              class="mdc-checkbox__native-control"
+              id="checkbox-1"
+            />
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                <path
+                  class="mdc-checkbox__checkmark-path"
+                  fill="none"
+                  d="M1.73,12.91 8.1,19.28 22.79,4.59"
+                />
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+            <div class="mdc-checkbox__ripple"></div>
+          </div>
+          <label for="checkbox-1">Agree</label>
+        </div>
+
+        <br />
+        <button
+          type="button"
+          disabled
+          class="foo-button mdc-button mdc-button--raised"
+          id="start-btn"
+        >
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label"><strong>Next</strong></span>
+        </button>
+        <div id="footer">
+          <img
+            id="logo"
+            alt="The logo of Comparative Cultural Psychology"
+            src="dist/ccp-forschungsreise-en-min.svg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="bundle.js" async></script>
+    <script src="webcam.js" async></script>
+  </body>
+</html>

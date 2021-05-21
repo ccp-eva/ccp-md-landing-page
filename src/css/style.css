@@ -34,7 +34,7 @@ body {
   margin-right: auto;
   display: flex;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: #faf5e7;
 }
 
 .flex-item {
@@ -45,4 +45,18 @@ body {
 // mail encryption
 .cryptedmail:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+.webcam-text {
+  font-size: 1.2rem;
+}
+
+#footer {
+  height: 8rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#logo {
+  height: 8rem;
 }
