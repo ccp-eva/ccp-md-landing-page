@@ -1,29 +1,41 @@
-// CCP Dark Blue #29485d
-// CCP Light Blue #00b1ea
-// CCP Minerva Green #006c66
-// CCP Light Green #c6d325
-
-@use "@material/theme" with (
-  $primary: #29485d,
-  $on-primary: #eeeeee
-);
-
-@use '@material/button/mdc-button';
-@use '@material/button';
-@use "@material/checkbox";
-@use "@material/form-field";
-
-@include checkbox.core-styles;
-@include form-field.core-styles;
-
-// .foo-button {
-//   @include button.container-fill-color(#29485d);
-// }
+/* 
+  CCP Dark Blue #29485d
+  CCP Light Blue #00b1ea
+  CCP Minerva Green #006c66
+  CCP Light Green #c6d325
+*/
 
 body {
   font-family: "PT Sans Narrow", sans-serif;
   background-color: #006c66;
-  // overflow: hidden;
+  color: hsl(0 0 10%);
+}
+
+.heading {
+  font-family: cholla-sans, sans-serif;
+  font-weight: 700;
+  letter-spacing: calc(20rem / 1000);
+  color: hsl(177deg 100% 21%);
+}
+
+.heading-em {
+  font-family: cholla-sans, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: calc(20rem / 1000);
+  color: hsl(177deg 100% 21%);
+}
+
+.text {
+  font-family: pt-sans-narrow, sans-serif;
+  font-weight: 400;
+  color: hsl(0 0% 10%);
+}
+
+.text-strong {
+  font-family: pt-sans-narrow, sans-serif;
+  font-weight: 700;
+  color: hsl(0 0% 20%);
 }
 
 #flex-wrapper {
@@ -42,7 +54,7 @@ body {
   margin-bottom: 5vh;
 }
 
-// mail encryption
+/* mail encryption */
 .cryptedmail:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
 }

@@ -3,23 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bundle.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Material Design CDN CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
     />
+
+    <!-- Material Design CDN JS -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Typography -->
+    <link rel="stylesheet" href="https://use.typekit.net/ess7xmw.css" />
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="app.webmanifest" />
+
+    <!-- User Style/JavaScript -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
     <title>Landing Page</title>
   </head>
+
   <body>
     <div id="flex-wrapper">
       <div class="flex-item">
         <div class="consent-text">
-          <h1>Consent Form</h1>
+          <h1 class="heading">Consent Form</h1>
 
           <h2>Thank you for your interest in our study</h2>
 
@@ -142,7 +159,6 @@
         <br />
         <button
           type="button"
-          disabled
           class="foo-button mdc-button mdc-button--raised"
           id="start-btn"
         >
@@ -153,12 +169,10 @@
           <img
             id="logo"
             alt="The logo of Comparative Cultural Psychology"
-            src="dist/ccp-forschungsreise-en-min.svg"
+            src="images/ccp-forschungsreise-en-min.svg"
           />
         </div>
       </div>
     </div>
-
-    <script src="bundle.js" async></script>
   </body>
 </html>
