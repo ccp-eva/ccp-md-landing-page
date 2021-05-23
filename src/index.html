@@ -29,7 +29,8 @@
     <!-- User Style/JavaScript -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
-    <title>Landing Page</title>
+    <script src="js/index.js" defer></script>
+    <title>GaFo</title>
   </head>
 
   <body>
@@ -139,7 +140,7 @@
             <input
               type="checkbox"
               class="mdc-checkbox__native-control"
-              id="checkbox-1"
+              id="confirm-checkbox"
             />
             <div class="mdc-checkbox__background">
               <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
@@ -153,18 +154,21 @@
             </div>
             <div class="mdc-checkbox__ripple"></div>
           </div>
-          <label for="checkbox-1">Agree</label>
+          <label for="confirm-checkbox"><strong>Agree</strong><label>
         </div>
 
         <br />
+
         <button
           type="button"
-          class="foo-button mdc-button mdc-button--raised"
-          id="start-btn"
+          class="ccp-button confirm foo-button mdc-button mdc-button--raised"
+          id="confirm-btn"
+          disabled
         >
           <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label"><strong>Next</strong></span>
         </button>
+
         <div id="footer">
           <img
             id="logo"
