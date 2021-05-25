@@ -3,23 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bundle.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Material Design CDN CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      crossorigin="anonymous"
+      integrity="sha384-lhcMJt26emnUFHEA1iymi2XtYC44BU+NNP+9oCZ+RqUTUiyiqkR4qVEUP2J6zVgM"
       rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
     />
+
+    <!-- Material Design CDN JS -->
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-+YtOobXId0jtJmCVn5Wq2bnwsGQ7QbByBu2tPgHzIjEEwna/5qDMBQvde19redzQ"
+      src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"
+    ></script>
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Typography -->
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/ess7xmw.css"
+      integrity="sha384-B4QR9emr2CNg5g6K9W06RfYz7wqssjpm+Whm/B7kSpeaIkhWzCS5Td7xltai8emb"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="app.webmanifest" />
-    <title>Landing Page</title>
+
+    <!-- User Style/JavaScript -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://unpkg.com/@ccp-eva/silent-recorder"
+      type="module"
+      async
+    ></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/webcam.js" defer></script>
+    <title>GaFo</title>
   </head>
+
   <body>
     <div id="flex-wrapper">
       <div class="flex-item">
-        <div class="webcam-text">
-          <h1>Webcam Preview</h1>
+        <div class="consent-text">
+          <h1 class="heading">Webcam Preview</h1>
 
           <p>
             For recording your child’s answers, we need to videotape you and
@@ -44,49 +78,35 @@
           </p>
         </div>
 
-        <div class="mdc-form-field">
-          <div class="mdc-checkbox">
-            <input
-              type="checkbox"
-              class="mdc-checkbox__native-control"
-              id="checkbox-1"
-            />
-            <div class="mdc-checkbox__background">
-              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                <path
-                  class="mdc-checkbox__checkmark-path"
-                  fill="none"
-                  d="M1.73,12.91 8.1,19.28 22.79,4.59"
-                />
-              </svg>
-              <div class="mdc-checkbox__mixedmark"></div>
-            </div>
-            <div class="mdc-checkbox__ripple"></div>
-          </div>
-          <label for="checkbox-1">Agree</label>
-        </div>
-
         <br />
+
         <button
           type="button"
-          disabled
-          class="foo-button mdc-button mdc-button--raised"
+          class="ccp-button confirm foo-button mdc-button mdc-button--raised"
+          id="webcam-btn"
+          onclick="toggleModal()"
+        >
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Webcam Preview</span>
+        </button>
+
+        <button
+          type="button"
+          class="ccp-button confirm foo-button mdc-button mdc-button--raised"
           id="start-btn"
         >
           <div class="mdc-button__ripple"></div>
-          <span class="mdc-button__label"><strong>Next</strong></span>
+          <span class="mdc-button__label">Start Experiment</span>
         </button>
+
         <div id="footer">
           <img
             id="logo"
             alt="The logo of Comparative Cultural Psychology"
-            src="dist/ccp-forschungsreise-en-min.svg"
+            src="images/ccp-forschungsreise-en-min.svg"
           />
         </div>
       </div>
     </div>
-
-    <script src="bundle.js" async></script>
-    <script src="webcam.js" async></script>
   </body>
 </html>
