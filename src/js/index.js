@@ -1,3 +1,5 @@
+mdc.ripple.MDCRipple.attachTo(document.getElementById("confirm-btn"));
+
 const button = document.getElementById("confirm-btn");
 const checkbox = document.getElementById("confirm-checkbox");
 

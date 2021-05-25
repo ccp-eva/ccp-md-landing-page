@@ -1,1 +1,2 @@
-import { silentrecorder } from "@ccp-eva/silent-recorder";
+mdc.ripple.MDCRipple.attachTo(document.getElementById("webcam-btn"));
+mdc.ripple.MDCRipple.attachTo(document.getElementById("start-btn"));
